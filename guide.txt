@@ -1,0 +1,20 @@
+MySQL in PHP:
+  $connection = mysqli_connect('localhost','root','','test_db'); - подключение
+  $result = mysqli_query($connection,"SELECT * FROM `articles_categories` ORDER BY `ID` DESC"); - запрос
+  mysqli_num_rows() - количество строк
+  mysql_fetch_assoc() - Обрабатывает ряд результата запроса и возвращает ассоциативный массив
+  >Пример
+    {
+      $result = mysqli_query($connection,"SELECT * FROM `articles_categories` ORDER BY `ID` DESC");
+      $test = mysqli_fetch_assoc($result);
+    }
+  mysqli_close() - закрытие сессии с SQL
+
+#############################################################
+
+SQL запросы:
+  SELECT * FROM `articles` WHERE `id`>5 ORDER BY `id` DESC
+//ВЫБРАТЬ ВСЕ ИЗ `СТАТЬИ` ГДЕ `ИД`>5 В СОРТИРОВКЕ ПО `ИД` В ОБРАТНУЮ СТОРОНУ
+
+  INSERT INTO `articles_categories` (`id`, `title`) VALUES (NULL, 'Лолстори');
+//ДОБАВЛЕНИЕ ЭЛЕМЕНТА В ТАБЛИЦУ
