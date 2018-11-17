@@ -11,7 +11,6 @@
 <?php
 
 include 'includes\db.php';
-
 $login = $_POST['name'];
 $password = $_POST['pass'];
 $if_registration = $_POST['if_registration'];
@@ -30,7 +29,6 @@ if ($if_registration == false) {
 else {
   mysqli_query($connection, "INSERT INTO `users` (`login`,`password`) VALUES('$login','$password')");
   echo 'Зареганы!Реги:<br>Логин: '.$login.'<br>Pass: '.$password;
-  function
 }
 ?>
 </header>
