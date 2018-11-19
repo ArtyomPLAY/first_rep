@@ -1,13 +1,24 @@
-body {
-  font-family: 'Oswald', sans-serif;
+body,header, nav, ul, li, h1,div {
+  padding: 0;
   margin: 0;
 }
 
-input {font-family: 'Oswald', sans-serif;}
+ul,li,h1,div ::selection {
+   background: transparent;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+
+input {
+  font-family: 'Rubik', sans-serif;
+}
 
 .btn {
   padding: 10px 10px 10px 20px;
-  background-color: #266DD3;
+  background-color: #3300ff;;
   border: 0;
   box-shadow: 2px 2px 15px #f1f1f1;
   border-radius: 30px;
@@ -16,6 +27,7 @@ input {font-family: 'Oswald', sans-serif;}
 }
 
 #login input::placeholder {
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -23,10 +35,11 @@ input {font-family: 'Oswald', sans-serif;}
   margin-left: 30px;
   padding: 15px 30px 15px 30px;
   border: 0;
+  font-weight: 500;
   background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: inset 0px 0px 0px 3px #266DD3;
+  box-shadow: inset 0px 0px 0px 3px #3300ff;;
   border-radius: 30px;
-  color: #266DD3;
+  color: #3300ff;;
   font-size: 15px;
   -webkit-transition: background-color 0.15s ease-out;
   -moz-transition: background-color 0.15s ease-out;
@@ -36,13 +49,13 @@ input {font-family: 'Oswald', sans-serif;}
 
 #login input[type="submit"]:hover {
   cursor: pointer;
-  background-color: #266DD3;
+  background-color: #3300ff;;
   color: #fff;
 }
 
 #login {
-background-color: #f2f2f2;
-padding: 10px;
+  background-color: #f1f2f6;
+  padding: 10px;
 }
 
 .registration_btn {
@@ -52,23 +65,23 @@ padding: 10px;
 }
 
 .btn_bck {
-  box-shadow: 0px 5px 10px rgb(0, 0, 0,0.0);
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.0);
   -webkit-transition: box-shadow 0.15s ease-out;
   -moz-transition: box-shadow 0.15s ease-out;
   -o-transition: box-shadow 0.15s ease-out;
   transition: box-shadow 0.15s ease-out;
 }
 
-.btn_bck:hover{
-  box-shadow: 0px 5px 10px rgb(0, 0, 0,0.2);
+.btn_bck:hover {
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.2);
 }
 
 input[type="checkbox"] {
-  margin:  20px 5px 15px 5px;
+  margin: 20px 5px 15px 5px;
 }
 
 .test_table {
-  display:inline-block;
+  display: inline-block;
   padding: 10px;
   background-color: #bfbfbf;
   border-radius: 20px;
@@ -76,11 +89,51 @@ input[type="checkbox"] {
 
 .test_table li {
   margin: 10px;
-  display:inline-block;
+  display: inline-block;
   padding: 5px;
   padding-left: 15px;
   padding-right: 15px;
   color: #fff;
   background-color: #142b4d;
   border-radius: 10px;
+}
+
+/*##### menu ######*/
+.menu {
+  background-color: #fff;
+  height: 50px;
+}
+
+
+.menu ul {
+  margin: 20px;
+}
+
+.menu li {
+  font-size: 16px;
+  color: #657195;
+  font-weight: 500;
+  margin-right: 20px;
+  display: inline;
+}
+
+.menu .logo {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+
+.menu .online-school {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400px;
+  padding: 10px;
+  background-color: #3300ff;
+}
+.menu .nav_menu li:hover {
+color:#3300ff;
+cursor: pointer;
+-webkit-transition: color 0.3s ease-out;
+-o-transition: color 0.3s ease-out;
+transition: color 0.3s ease-out;
 }

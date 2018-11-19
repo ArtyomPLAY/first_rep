@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Form</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/php.css">
 </head>
 <link rel="stylesheet" href="/css/php.css">
@@ -17,7 +17,6 @@ $if_registration = $_POST['if_registration'];
 
 if ($if_registration == false) {
   $count = mysqli_query($connection, "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password'");
-
   if(mysqli_num_rows($count) == 0)
   {
     echo 'Вы не зареганы!';

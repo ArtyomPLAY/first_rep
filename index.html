@@ -4,11 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Form</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
+  <header class="menu">
+    <nav>
+      <ul>
+        <div style="float:left;">
+          <li class="logo">SmthiSs</li>
+          <li class="online-school">Онлайн школа</li>
+        </div>
+        <div class="nav_menu" style="float:right;">
+          <li>Home</li>
+          <li>Media</li>
+          <li>About</li>
+          <li>Log in</li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <div style="height:2px;background-color:#d9ddeb">
+  </div>
   <section id="login">
     <form action="login.php" method="post">
       <input type="text" name="name" placeholder="name" required class="btn btn_bck">
@@ -19,13 +37,6 @@
       <input type="checkbox" name="if_registration">
      </label>
     </form>
-    <h1>Нужна ли регистрация? Просто так!</h1>
-    <ul class ="test_table" style="list-style: none">
-      <li>Allo
-      <li>privet
-      <li> che kak?
-    </ul>
   </section>
 </body>
-
 </html>
