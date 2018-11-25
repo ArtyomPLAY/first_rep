@@ -23,10 +23,18 @@ input {
   box-shadow: 2px 2px 15px #f1f1f1;
   border-radius: 30px;
   color: #fff;
-  font-size: 18px;
+}
+
+#login input {
+  margin-right: 20px;
+  padding: 15px 30px 15px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
 }
 
 #login input::placeholder {
+  font-size: 15px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -49,7 +57,9 @@ input {
 
 #login input[type="submit"]:hover {
   cursor: pointer;
-  background-color: #3300ff;;
+  background-color: #3300ff;
+  transition: box-shadow 0.2s ease-out;
+  box-shadow: inset 0px 0px 0px 3px #3300ff , 0px 5px 20px rgba(51, 0, 255, 0.23);
   color: #fff;
 }
 
@@ -59,6 +69,8 @@ input {
 }
 
 .registration_btn {
+  font-weight: 500;
+  font-size: 15px;
   padding: 5px 10px 5px 10px;
   border-radius: 10px;
   background-color: #fff;
@@ -66,13 +78,10 @@ input {
 
 .btn_bck {
   box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.0);
-  -webkit-transition: box-shadow 0.15s ease-out;
-  -moz-transition: box-shadow 0.15s ease-out;
-  -o-transition: box-shadow 0.15s ease-out;
-  transition: box-shadow 0.15s ease-out;
 }
 
 .btn_bck:hover {
+  transition: box-shadow 0.15s ease-out;
   box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.2);
 }
 
@@ -100,21 +109,21 @@ input[type="checkbox"] {
 
 /*##### menu ######*/
 .menu {
+  height: 40px;
   background-color: #fff;
-  height: 50px;
 }
-
 
 .menu ul {
   margin: 20px;
 }
 
-.menu li {
+.menu ul li  {
   font-size: 16px;
   color: #657195;
   font-weight: 500;
   margin-right: 20px;
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .menu .logo {
@@ -130,10 +139,14 @@ input[type="checkbox"] {
   padding: 10px;
   background-color: #3300ff;
 }
+
+.menu .nav_menu {
+  display: inline-block;
+  float: right;
+}
+
 .menu .nav_menu li:hover {
-color:#3300ff;
-cursor: pointer;
--webkit-transition: color 0.3s ease-out;
--o-transition: color 0.3s ease-out;
-transition: color 0.3s ease-out;
+  color:#3300ff;
+  cursor: pointer;
+  transition: color 0.3s ease-out;
 }
