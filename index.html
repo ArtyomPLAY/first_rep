@@ -34,9 +34,32 @@
       <input type="submit" value="log in" class="btn_bck">
       <br>
       <label class="registration_btn btn_bck">Зарегистрироваться
-      <input type="checkbox" name="if_registration">
-     </label>
+        <input type="checkbox" name="if_registration">
+      </label>
     </form>
   </section>
+  <script>
+
+  function human(name, age, city) {
+    this.name = name;
+    this.age = age;
+    this.city = city;
+  }
+
+  var Danylo = new Object ();
+  Danylo.name = 'Danila';
+  Danylo.age = 17;
+  Danylo.city = 'Serpuhov';
+
+  var Artyom = new human ('Artyom',18,'Penza');
+  console.log(Artyom);
+
+  Danylo.describe = function() {
+    return 'Name: ' + this.name + ' Age: ' + this.age;
+  }
+
+  console.log("Данные пользователя: " + Danylo.describe());
+  </script>
 </body>
+
 </html>
