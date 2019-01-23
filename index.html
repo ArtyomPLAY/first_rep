@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Form</title>
-  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <header class="menu">
+  <header id="topmenu" class="menu">
     <nav>
       <ul>
         <div style="float:left;">
-          <li class="logo">SmthiSs</li>
+          <li class="logo">40digit</li>
           <li class="online-school">Онлайн школа</li>
         </div>
         <div class="nav_menu" style="float:right;">
@@ -25,41 +26,22 @@
       </ul>
     </nav>
   </header>
-  <div style="height:2px;background-color:#d9ddeb">
-  </div>
+  <div style="height:2px;background-color:#d9ddeb"></div>
   <section id="login">
-    <form action="login.php" method="post">
-      <input type="text" name="name" placeholder="name" required class="btn btn_bck">
-      <input type="password" name="pass" placeholder="password" required class="btn btn_bck">
-      <input type="submit" value="log in" class="btn_bck">
-      <br>
-      <label class="registration_btn btn_bck">Зарегистрироваться
-        <input type="checkbox" name="if_registration">
+    <form name="loginForm" action="login.php" method="post" onsubmit="return window.validateForm();">
+      <input type="text" name="fname" placeholder="name" required class="btn btn_bck" />
+      <input type="password" name="pass" placeholder="password" required class="btn btn_bck" />
+      <input type="submit" value="login" class="btn_bck" /> <br />
+      <label class="registration_btn btn_bck">Зарегистрироваться<input type="checkbox" name="if_registration" />
       </label>
     </form>
   </section>
-  <script>
+  <section>
+    <button onclick="changeColor('red');" class="registration_btn btn_bck">Красный</button>
+    <button onclick="changeColor('#d9ddeb');" class="registration_btn btn_bck">Серый</button>
+    <button onclick="changeColor(firstcolor);" class="registration_btn btn_bck">Самый первый</button>
+  </section>
 
-  function human(name, age, city) {
-    this.name = name;
-    this.age = age;
-    this.city = city;
-  }
-
-  var Danylo = new Object ();
-  Danylo.name = 'Danila';
-  Danylo.age = 17;
-  Danylo.city = 'Serpuhov';
-
-  var Artyom = new human ('Artyom',18,'Penza');
-  console.log(Artyom);
-
-  Danylo.describe = function() {
-    return 'Name: ' + this.name + ' Age: ' + this.age;
-  }
-
-  console.log("Данные пользователя: " + Danylo.describe());
-  </script>
 </body>
 
 </html>

@@ -142,7 +142,6 @@ input[type="checkbox"] {
 
 .menu .nav_menu {
   display: inline-block;
-  float: right;
 }
 
 .menu .nav_menu li:hover {
